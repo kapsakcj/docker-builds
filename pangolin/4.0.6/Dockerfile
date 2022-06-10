@@ -96,3 +96,6 @@ ADD https://raw.githubusercontent.com/StaPH-B/docker-builds/master/tests/SARS-Co
 # test on a B.1.1.7 genome
 RUN pangolin /test-data/SRR13957123.consensus.fa --analysis-mode usher -o /test-data/SRR13957123-pusher && \
  cat /test-data/SRR13957123-pusher/lineage_report.csv
+ 
+ # added for testing auto-testing GH actions workflow
+RUN echo "hello"
