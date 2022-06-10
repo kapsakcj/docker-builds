@@ -45,3 +45,6 @@ FROM app as test
 # The git repository used in the build has test files to run
 RUN fastq-scan -h
 RUN cat /fastq-scan/example.fq | fastq-scan -g 150000
+
+# adding for testing PR-autotesting of dockerfiles
+RUN echo "hello"
